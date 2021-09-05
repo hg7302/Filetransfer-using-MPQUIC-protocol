@@ -108,6 +108,6 @@ func sendFile(stream quic.Stream, fileToSend string) {
     stream.Close()
     stream.Close()
     time.Sleep(2 * time.Second)
-    fmt.Println("\n\nFile has been received, closing stream!")
+    fmt.Println("\n\nFile has been sent, closing stream!")
     return
 }

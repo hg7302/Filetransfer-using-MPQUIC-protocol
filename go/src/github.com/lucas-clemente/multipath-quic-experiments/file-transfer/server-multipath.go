@@ -91,5 +91,5 @@ func main() {
 	time.Sleep(2 * time.Second)
 	stream.Close()
 	stream.Close()
-	fmt.Println("\n\nSent file completely!")
+	fmt.Println("\n\nReceived file completely!")
 }
