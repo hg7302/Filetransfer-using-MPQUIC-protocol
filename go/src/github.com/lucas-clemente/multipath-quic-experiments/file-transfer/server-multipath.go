@@ -69,8 +69,6 @@ func main() {
 
 	for {
 		if (fileSize - receivedBytes) < config.BUFFERSIZE {
-			// fmt.Println("\nlast chunk of file.")
-
 			recv, err := io.CopyN(newFile, stream, (fileSize - receivedBytes))
 			utils.HandleError(err)
 

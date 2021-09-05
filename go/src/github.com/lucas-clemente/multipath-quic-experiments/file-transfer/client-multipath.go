@@ -6,16 +6,15 @@ import (
     "os"
     "strconv"
     "time"
-    //"bufio"
 
     utils "./utils"
     config "./config"
     quic "github.com/lucas-clemente/quic-go"
 )
 
-// const addr = config.SERVER_ADDR
-const threshold = 5 * 1024  // 5KB
-//TODO: set this threshold dynamically, based on network conditions
+
+const threshold = 5 * 1024
+
 
 
 func main() {
@@ -26,14 +25,6 @@ func main() {
 
     fileToSend := os.Args[1]
     addr := os.Args[2] + ":4242"
-
-    // reader := bufio.NewReader(os.Stdin)
-    // fmt.Print("Filename (blank for dummyfile.txt): ")
-    // text, _ := reader.ReadString('\n')
-
-    // if text != "\n" {
-    //     fileToSend = text[:len(text) - 1]
-    // }
     fmt.Println("Server Address: ", addr)
     fmt.Println("Receiving File: ", fileToSend)
 
