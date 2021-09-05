@@ -1,0 +1,13 @@
+xpType:{type}
+outputPath:{output}
+snaplenPcap:100
+schedc:default
+scheds:default
+congctrl:{cc}
+kpmc:fullmesh
+kpms:fullmesh
+earlyRetrans:3
+rmem:10240 87380 16777216
+file:random
+file_size:{filesize:d}
+{additional}

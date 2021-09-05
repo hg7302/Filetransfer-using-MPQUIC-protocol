@@ -1,0 +1,8 @@
+leftSubnet:10.0.
+rightSubnet:10.1.
+topoType:MultiIf
+path_0:{delay[0]:.2f},1000,{bandwidth[0]:.2f},0.0
+path_1:{delay[1]:.2f},1000,{bandwidth[1]:.2f},0.0
+changeNetem:yes
+netemAt_0:0,loss {loss[0]:.2f}%
+netemAt_1:0,loss {loss[1]:.2f}%

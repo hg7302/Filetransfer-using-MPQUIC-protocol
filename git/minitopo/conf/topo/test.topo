@@ -1,0 +1,10 @@
+desc:Simple configuration with multiple  links between client and server
+topoType:MultiIf
+leftSubnet:10.0.
+rightSubnet:10.1.
+#path_x:delay,queueSize(may be calc),bw
+path_0:10,10,5
+path_1:5,40,1
+path_2:15,30,2
+path_3:20,20,1
+path_4:5,5,2
